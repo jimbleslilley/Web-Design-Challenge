@@ -2,19 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Data Visualisations</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-secondary">
+        <div class="container">
+            <a class="navbar-brand text-white bg-info" href="index.html" >Latitude</a>
 
-    <ul>
-        <li><a href="data.html">Data</a></li>
-    </ul>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navmenu" type="button"  >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ml-auto">    
+                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container content">    
+        <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-8">
+                
+                    <h3 class="color">Summary: Latitude vs. X</h3>
+                    
+                    <div class=demo-content>
+                         <img class="img-thumbnail float-left" src="visualisations/Fig1.png" width="60%" alt="maxtemp">
+                    </div>
+                   
+                     
+                    <p>To analysise how weather changed based on distance from the equator, 
+                        the OpenWeatherMap API was used to collect aproximately 500 pieces of data from around the world. 
+                    </p>
 
+                    <p>
+                        This website will allow you to view the data used in this project, as well as access to the visualisations
+                        created using MatPlotLib. 
+                
+                    </p>
+                
+            </div>
+           
+            <div class="col-md-4">
+                
+                    <h3 class="color">Visualisations</h3>
+                    
+                    <div class="row">
+                        
+                        <div class="col-3 col-md-6">
+                            <a href="temp.html"><img class="demo-btm" src="visualisations/Fig1.png" width="100%"  alt="temperature"></a>
+                             
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="humid.html"><img class="demo-btm" src="visualisations/Fig2.png" width="100%" alt="humidity"></a>
+                        </div>
+                   
+                        <div class="col-3 col-md-6">
+                            <a href="cloud.html"><img class="demo-btm" src="visualisations/Fig3.png" width="100%"  alt="cloudiness"></a>
+                        </div>
 
-
+                        <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img class="demo-btm" src="visualisations/Fig4.png"width="100%"  alt="wind speed"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
-</html>
